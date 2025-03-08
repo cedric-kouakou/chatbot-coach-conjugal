@@ -1,0 +1,125 @@
+/* Style général */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+  margin: 0;
+}
+
+/* Conteneur principal */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espacement entre les éléments */
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Styles des images */
+.coach-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+/* Chat au centre */
+.chat-container {
+  width: 600px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Zone de chat */
+#chat-box {
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+/* Conteneur des messages */
+.message-container {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Messages du bot (Gauche) */
+.bot-message {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 15px 15px 15px 5px;
+  max-width: 70%;
+  align-self: flex-start; /* Alignement à gauche */
+}
+
+/* Messages de l'utilisateur (Droite) */
+.user-message {
+  background-color: #e9ecef;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 15px 15px 5px 15px;
+  max-width: 70%;
+  align-self: flex-end; /* Alignement à droite */
+}
+
+/* Barre de saisie */
+.input-container {
+  display: flex;
+  padding: 10px;
+  background: white;
+  border-top: 1px solid #e9ecef;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+  outline: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+#send-btn {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#send-btn:hover {
+  background: #0056b3;
+}
+
+/* Responsive pour écrans plus petits */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coach-image {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+}

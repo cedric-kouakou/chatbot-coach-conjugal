@@ -14,7 +14,8 @@ const conjugalKeywords = [
     'amour', 'couple', 'relation', 'conflit', 'communication', 'mariage',
     'divorce', 'problème', 'dispute', 'famille', 'infidélité', 'confiance',
     'émotion', 'sentiment', 'partenaire', 'mari', 'femme', 'conjoint', 'conjointe', 'copain',
-    'copine', 'amant', 'amante', 'fiancé', 'fiancée', 'femme', 'homme', ' partenaire'
+    'copine', 'amant', 'amante', 'fiancé', 'fiancée', 'femme', 'homme', ' partenaire',
+    'bonjour', 'salut', 'hello', 'aide', 'conseil', 'santé', 'bien-être', 'stress', 'dépression'
     
     
 

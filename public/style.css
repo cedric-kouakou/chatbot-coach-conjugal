@@ -4,9 +4,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #f0f2f5;
   margin: 0;
+  padding: 20px; /* Ajout de padding pour les petits écrans */
 }
 
 /* Conteneur principal */
@@ -15,8 +16,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px; /* Espacement entre les éléments */
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
+  padding: 20px; /* Ajout de padding pour les petits écrans */
 }
 
 /* Styles des images */
@@ -29,7 +31,8 @@ body {
 
 /* Chat au centre */
 .chat-container {
-  width: 600px;
+  width: 100%;
+  max-width: 600px; /* Limite la largeur maximale */
   background: white;
   border-radius: 15px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -46,7 +49,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f8f9fa;
-  padding: 20px;
+  padding: 10px; /* Réduit le padding pour les petits écrans */
 }
 
 /* Conteneur des messages */
@@ -116,10 +119,65 @@ body {
   .wrapper {
     flex-direction: column;
     align-items: center;
+    gap: 10px; /* Réduit l'espacement */
   }
 
   .coach-image {
-    width: 100px;
+    width: 100px; /* Réduit la taille de l'image */
     margin-bottom: 10px;
+  }
+
+  .chat-container {
+    padding: 10px; /* Réduit le padding */
+  }
+
+  #chat-box {
+    height: 300px; /* Réduit la hauteur de la zone de chat */
+    padding: 5px; /* Réduit le padding */
+  }
+
+  .bot-message, .user-message {
+    max-width: 80%; /* Augmente la largeur des messages */
+    padding: 8px 12px; /* Réduit le padding */
+    font-size: 14px; /* Réduit la taille de la police */
+  }
+
+  #user-input {
+    font-size: 12px; /* Réduit la taille de la police */
+  }
+
+  #send-btn {
+    padding: 8px 12px; /* Réduit le padding */
+    font-size: 14px; /* Réduit la taille de la police */
+  }
+}
+
+/* Responsive pour très petits écrans (mobile) */
+@media (max-width: 480px) {
+  .coach-image {
+    width: 80px; /* Réduit encore la taille de l'image */
+  }
+
+  .chat-container {
+    border-radius: 10px; /* Réduit le rayon de la bordure */
+  }
+
+  #chat-box {
+    height: 250px; /* Réduit encore la hauteur de la zone de chat */
+  }
+
+  .bot-message, .user-message {
+    max-width: 90%; /* Augmente encore la largeur des messages */
+    padding: 6px 10px; /* Réduit encore le padding */
+    font-size: 12px; /* Réduit encore la taille de la police */
+  }
+
+  #user-input {
+    font-size: 12px; /* Réduit encore la taille de la police */
+  }
+
+  #send-btn {
+    padding: 6px 10px; /* Réduit encore le padding */
+    font-size: 12px; /* Réduit encore la taille de la police */
   }
 }
